@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Population graph app</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <script defer src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js'></script>
+    <script defer src='./myChart.js'></script>
+</head>
+
+<body>
+    <div class='content'>
+        <p><img class="image" src="images/Smoother_HR_ride.png"/></p>
+        <h1>Population graphs</h1>
+        <p>Enter three letter <a href="https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes" target="_blank">country code</a></p>
+        <input class='textinput' placeholder='Country' type='text' id='country' maxlength='5' />
+        <p>
+            <button class='button' id='renderBtn'>Render population graph</button>
+        </p>
+        <h2 id="info-title"></h2>
+        <div class='container'>
+            <canvas id='myChart'></canvas>
+        </div>
+    </div>
+    <footer>
+        <p><strong>Author:</strong> Helena Juvankoski <span class="red">//</span> Based on the Population graphs app (<a target="_blank" href="https://github.com/mikkokotola/populationgraphs/blob/master/LICENSE">MIT</a>)
+            <span class="red">//</span> Population data: World Bank (<a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>)</p>
+    </footer>
+</body>
+
+</html>
